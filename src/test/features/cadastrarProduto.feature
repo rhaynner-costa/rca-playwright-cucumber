@@ -2,7 +2,7 @@ Feature: Gerenciamento de produtos
 
   Background:
     Given Eu esteja logado no ServerRest com as seguintes credenciais:
-      | USUARIO | Deangelo.Ullrich@hotmail.com |
+      | USUARIO | testesserverrest@qeteste.com |
       | SENHA   | teste123                     |
     And Eu estou na página home
 

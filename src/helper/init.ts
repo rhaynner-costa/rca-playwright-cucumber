@@ -2,7 +2,7 @@
 const fs = require("fs-extra");
 try {
     fs.ensureDir("test-result");
-    fs.empty("test-result");
+    fs.emptyDir("test-result");
 
 } catch (error) {
     console.log("diretorio test-result não foi criado " + error);
