@@ -1,17 +1,18 @@
 Feature: Gerenciamento de produtos
 
   Background:
-    Given Eu esteja logado no ServerRest com as seguintes credenciais:
+    Given O usuario navega para a pagina de login do ServerRest
+    And E faz o login no ServerRest com as seguintes credenciais:
       | USUARIO | testesserverrest@qeteste.com |
       | SENHA   | teste123                     |
-    And Eu estou na página home
+    And Ele está na página home
 
   Scenario: Cadastrar um produto
-    When Eu clicar no botão Cadastrar Produtos na barra de navegação
-    Then Eu devo acessar o cadastro de produto
-    And Eu preencher o campo Nome do produto com "Produto X"
-    And Eu preencher o campo Preço com "12"
-    And Eu preencher o campo Descrição com "Produto de teste"
-    And Eu preencher o campo Quantidade com "10"
-    # When Eu clicar no botão Cadastrar
-    # Then Eu devo ser redirecionado para a lista de produtos
+    When O usuário clicar no botão Cadastrar Produtos na barra de navegação
+    Then O usuário deve acessar a página de cadastro de produto
+    And O usuário preenche o campo Nome do produto com "Produto X"
+    And O usuário preenche o campo Preço com "12"
+    And O usuário preenche o campo Descrição com "Produto de teste"
+    And O usuário preenche o campo Quantidade com "10"
+    # When O usuário clicar no botão "Cadastrar"
+    # Then O usuário será redirecionado para a lista de produtos
